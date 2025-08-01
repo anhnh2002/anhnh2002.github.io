@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
     
     // Observe elements for animation
-    const animateElements = document.querySelectorAll('.research-item, .project-card, .publication-item');
+    const animateElements = document.querySelectorAll('.research-item, .project-card, .publication-item, .stat-card, .contribution-graph');
     animateElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
