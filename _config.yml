@@ -1,7 +1,7 @@
 # Site settings
-title: "Hoang Anh Nguyen - AI Researcher"
+title: "Anh Nguyen Hoang - AI Researcher"
 description: "AI Researcher specializing in AI for Software Development, Large Language Models, and Continual Learning"
-author: "Hoang Anh Nguyen"
+author: "Anh Nguyen Hoang"
 email: "anh.nh204511@gmail.com"
 url: "https://anhnh2002.github.io"
 baseurl: ""
@@ -57,4 +57,4 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      author: "Hoang Anh Nguyen"
+      author: "Anh Nguyen Hoang"
