@@ -1,4 +1,4 @@
-# Anh Nguyen Hoang
+# Hoang Anh Nguyen
 
 **AI Researcher | PhD Candidate Seeker | Open Source Contributor**
 
@@ -8,7 +8,7 @@
 
 ## About Me
 
-I'm Anh Nguyen Hoang, currently conducting research in **AI for Software Development** (AI4Code, AI4Software) under the guidance of [Prof. Bach Le](https://xuanbachle.github.io/) at **FPT Software AI Center**. I graduated with an excellent Bachelor's degree in Computer Science from **Hanoi University of Science and Technology** in 3.5 out of 4 years.
+I'm Hoang Anh Nguyen, currently conducting research in **AI for Software Development** (AI4Code, AI4Software) under the guidance of [Prof. Bach Le](https://xuanbachle.github.io/) at **FPT Software AI Center**. I graduated with an excellent Bachelor's degree in Computer Science from **Hanoi University of Science and Technology** in 3.5 out of 4 years.
 
 My research focuses on developing algorithms to train and fine-tune **Large Language Models for code** and exploring **agentic systems** for Software Engineering tasks. I'm passionate about bridging the gap between artificial intelligence and software development to create more efficient and intelligent development tools.
 
