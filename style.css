@@ -35,6 +35,10 @@ a:hover {
     border-bottom: 1px solid #999;
     padding-top: 15px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 10;
 }
 
 .tab {
@@ -59,6 +63,17 @@ a:hover {
     background: #fff;
     font-weight: bold;
     border-bottom: 1px solid #fff;
+}
+
+.tab-cv {
+    background: #2563eb;
+    color: #fff;
+    border-color: #2563eb;
+}
+
+.tab-cv:hover {
+    background: #1d4ed8;
+    color: #fff;
 }
 
 /* Profile Section */
@@ -128,6 +143,10 @@ a:hover {
 
 .social-icons a:nth-child(3) {
     background: #0077b5;
+}
+
+.social-icons a:nth-child(4) {
+    background: #d93025;
 }
 
 .social-icons a:hover {
@@ -307,4 +326,6 @@ footer {
 
 html {
     scroll-behavior: smooth;
+    /* Offset anchor jumps so headings clear the sticky nav. */
+    scroll-padding-top: 60px;
 }
