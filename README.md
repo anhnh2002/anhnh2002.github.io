@@ -91,3 +91,6 @@ Pioneered one of the first attempts to tackle **Vietnamese Handwritten Text Reco
 ---
 
 *"Bridging AI and Software Development to create intelligent solutions for tomorrow's challenges."*
+
+I wanna keep my current homepage lean as it be now, but I wanna make an additional version of it which can be enabled by a button from current one 
+The additional version I wanna implement is a creative and story-telling with 3d movements and animations; and also add some non-professional things like hobbies: I like sports especially football, my favourite footballer is Cristiano Ronaldo; I also love playing Leaguage of Legens; I am also a amatuer photographer (see at hobbies/photography) and using A7C + Tamron 28-75 G2 and Tamrong 70-180 G1 

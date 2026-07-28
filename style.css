@@ -76,6 +76,17 @@ a:hover {
     color: #fff;
 }
 
+.tab-story {
+    background: #7c3aed;
+    color: #fff;
+    border-color: #7c3aed;
+}
+
+.tab-story:hover {
+    background: #6d28d9;
+    color: #fff;
+}
+
 /* Profile Section */
 .profile {
     display: flex;

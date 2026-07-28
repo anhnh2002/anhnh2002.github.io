@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Nguyen Hoang — The Story</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 style=%22font-family: Arial, sans-serif; font-weight: bold; fill: %232563eb%22>AN</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,600&family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="story.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <a href="index.html" class="back-link" title="Back to the classic version">&larr; Classic</a>
+
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="hero">
+        <div class="hero-inner">
+            <p class="hero-kicker">A story in chapters</p>
+            <h1 class="hero-title">
+                <span class="line"><span>Anh</span></span>
+                <span class="line"><span>Nguyen Hoang</span></span>
+            </h1>
+            <p class="hero-sub">AI researcher by day.<br>Football dreamer, Summoner, and amateur photographer the rest of the time.</p>
+            <div class="scroll-hint">
+                <span class="mouse"><span class="wheel"></span></span>
+                <p>scroll to begin</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ CHAPTER 1: RESEARCH ============ -->
+    <section class="chapter" id="chapter-research">
+        <div class="chapter-head" data-num="01">
+            <span class="chapter-num">01</span>
+            <h2 class="chapter-title">The Researcher</h2>
+            <p class="chapter-tag">Teaching machines to write software</p>
+        </div>
+        <div class="chapter-body">
+            <p class="lead reveal">
+                I'm an AI researcher at <a href="https://www.fpt-aicenter.com/" target="_blank">FPT Software AI Center</a>,
+                working under the guidance of <a href="https://xuanbachle.github.io/" target="_blank">Prof. Bach Le</a> and
+                <a href="https://bdqnghi.github.io/" target="_blank">Dr. Nghi D. Q. Bui</a>. I graduated early with an
+                excellent Bachelor's degree in Computer Science from
+                <a href="https://hust.edu.vn/" target="_blank">Hanoi University of Science and Technology</a>.
+            </p>
+            <p class="reveal">
+                My research lives at the intersection of <strong>AI and Software Engineering</strong> — training and
+                fine-tuning Large Language Models for code, and building agentic systems that can reason about,
+                document, and even migrate entire codebases.
+            </p>
+            <div class="cards">
+                <div class="card reveal">
+                    <span class="card-venue">Findings of ACL 2026</span>
+                    <h3>CodeWiki</h3>
+                    <p>Evaluating AI's ability to generate holistic documentation for large-scale codebases.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-venue">Preprint</span>
+                    <h3>RustPrint</h3>
+                    <p>Documentation-guided agentic migration of large-scale C codebases to Rust.</p>
+                </div>
+                <div class="card reveal">
+                    <span class="card-venue">NAACL 2025 · EMNLP 2024</span>
+                    <h3>Continual Relation Extraction</h3>
+                    <p>Keeping language models sharp as they learn new relations over time.</p>
+                </div>
+            </div>
+            <p class="reveal chapter-footnote">Currently seeking <strong>PhD opportunities in Computer Science</strong> — Software Systems and/or Machine Learning.</p>
+        </div>
+    </section>
+
+    <!-- ============ CHAPTER 2: FOOTBALL ============ -->
+    <section class="chapter chapter-football" id="chapter-football">
+        <div class="chapter-head" data-num="02">
+            <span class="chapter-num">02</span>
+            <h2 class="chapter-title">The Beautiful Game</h2>
+            <p class="chapter-tag">Football is not a hobby. It's a religion.</p>
+        </div>
+        <div class="chapter-body">
+            <div class="cr7-block">
+                <div class="cr7-number" aria-hidden="true">7</div>
+                <div class="cr7-text">
+                    <p class="lead reveal">
+                        When I'm away from the keyboard, I'm on the pitch — or watching it. Football has been my
+                        first love for as long as I can remember: the tactics, the drama, the ninety minutes where
+                        anything can happen.
+                    </p>
+                    <p class="reveal">
+                        And above it all, one name: <strong>Cristiano Ronaldo</strong>. Not just for the goals —
+                        for the obsession. The discipline to show up every single day, to outwork talent itself,
+                        to believe when nobody else does. That's the standard I try to bring to everything,
+                        research included.
+                    </p>
+                    <p class="siu reveal" aria-hidden="true">Siuuu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CHAPTER 3: LEAGUE OF LEGENDS ============ -->
+    <section class="chapter chapter-lol" id="chapter-lol">
+        <div class="chapter-head" data-num="03">
+            <span class="chapter-num">03</span>
+            <h2 class="chapter-title">The Summoner</h2>
+            <p class="chapter-tag">Welcome to Summoner's Rift</p>
+        </div>
+        <div class="chapter-body">
+            <p class="lead reveal">
+                Some people unwind with Netflix. I queue up for the Rift.
+            </p>
+            <p class="reveal">
+                League of Legends is my second battlefield — a game of macro decisions, micro mechanics, and
+                the eternal question of whether to rotate for dragon or trade for towers. It scratches the same
+                itch as research: read the situation, commit to a plan, adapt when it all falls apart at minute twenty.
+            </p>
+            <div class="lol-stats reveal">
+                <div class="lol-stat"><span class="lol-stat-num">5v5</span><span class="lol-stat-label">the arena</span></div>
+                <div class="lol-stat"><span class="lol-stat-num">160+</span><span class="lol-stat-label">champions</span></div>
+                <div class="lol-stat"><span class="lol-stat-num">1</span><span class="lol-stat-label">nexus to defend</span></div>
+            </div>
+            <p class="gg reveal" aria-hidden="true">gg wp</p>
+        </div>
+    </section>
+
+    <!-- ============ CHAPTER 4: PHOTOGRAPHY ============ -->
+    <section class="chapter chapter-photo" id="chapter-photography">
+        <div class="chapter-head" data-num="04">
+            <span class="chapter-num">04</span>
+            <h2 class="chapter-title">The Photographer</h2>
+            <p class="chapter-tag">Chasing light across Vietnam</p>
+        </div>
+        <div class="chapter-body">
+            <p class="lead reveal">
+                Between mountains and coastlines, I carry a camera. Amateur, self-taught, and happily lost
+                in golden hour.
+            </p>
+            <div class="gear reveal">
+                <span class="gear-item">Sony A7C</span>
+                <span class="gear-item">Tamron 28–75mm G2</span>
+                <span class="gear-item">Tamron 70–180mm G1</span>
+            </div>
+
+            <!-- Tà Xùa -->
+            <div class="album">
+                <div class="album-head reveal">
+                    <h3>Tà Xùa</h3>
+                    <span class="album-date">January 2026</span>
+                </div>
+                <p class="album-intro reveal">Tà Xùa is a highland destination in northern Vietnam celebrated for its mountain scenery and seas of cloud. January falls within its best-known cloud-hunting season.</p>
+                <div class="gallery">
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/26-01-25%2006-35-56%200014.jpg" alt="Dawn breaks above a sea of clouds between the dark mountain ridges" loading="lazy"><figcaption>Dawn breaks above a sea of clouds between the dark mountain ridges.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/26-01-25%2007-37-23%200017.jpg" alt="A local musician performs with a traditional instrument on the Dinosaur Spine" loading="lazy"><figcaption>A local musician performs with a traditional instrument on the Dinosaur Spine.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/26-01-25%2007-43-38%200018.jpg" alt="Local children gather peach blossoms to sell to visitors on the Dinosaur Spine" loading="lazy"><figcaption>Local children gather peach blossoms to sell to visitors on the Dinosaur Spine.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/DSC03579.jpg" alt="The Dinosaur Spine viewed from below" loading="lazy"><figcaption>The Dinosaur Spine viewed from below.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/DSC03581.jpg" alt="The narrow Dinosaur Spine trail viewed from above" loading="lazy"><figcaption>The narrow Dinosaur Spine trail viewed from above.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/DSC03268.jpg" alt="Sunset over Khe Gió, with layered mountains fading into the evening haze" loading="lazy"><figcaption>Sunset over Khe Gió, with layered mountains fading into the evening haze.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/TaXua/26-01-25%2022-11-44%200022.jpg" alt="The open grassland of Tà Xùa beneath a clear night sky" loading="lazy"><figcaption>The open grassland of Tà Xùa beneath a clear night sky.</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Lào Cai -->
+            <div class="album">
+                <div class="album-head reveal">
+                    <h3>Lào Cai</h3>
+                    <span class="album-date">June 2026</span>
+                </div>
+                <p class="album-intro reveal">From the busy streets of Sa Pa to the rice terraces and wooden homes of Tả Van, a village in the Mường Hoa Valley at the foot of the Hoàng Liên Sơn range.</p>
+                <div class="gallery">
+                    <figure class="photo"><img src="hobbies/photography-web/LaoCai/26-06-12%2018-26-19%200388.jpg" alt="Sa Pa at dusk, where restaurant lights and evening traffic fill a mountain street" loading="lazy"><figcaption>Sa Pa at dusk, where restaurant lights and evening traffic fill a mountain street.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/LaoCai/26-06-14%2008-37-33%200376.jpg" alt="Traditional wooden homes nestled among vivid green rice terraces in Tả Van" loading="lazy"><figcaption>Traditional wooden homes nestled among vivid green rice terraces in Tả Van.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/LaoCai/26-06-14%2008-59-31%200375.jpg" alt="A wider view of Tả Van's curving rice terraces, farmhouses, and forested slopes" loading="lazy"><figcaption>A wider view of Tả Van's curving rice terraces, farmhouses, and forested slopes.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/LaoCai/26-06-15%2019-36-01%200401.jpg" alt="A portrait on a rustic wooden suspension bridge amid the rice fields of Tả Van" loading="lazy"><figcaption>A portrait on a rustic wooden suspension bridge amid the rice fields of Tả Van.</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Phú Yên -->
+            <div class="album">
+                <div class="album-head reveal">
+                    <h3>Phú Yên</h3>
+                    <span class="album-date">April &amp; May 2026</span>
+                </div>
+                <p class="album-intro reveal">A coastal province in central Vietnam known for secluded beaches, rocky headlands, fishing communities, and a long shoreline.</p>
+                <div class="gallery">
+                    <figure class="photo"><img src="hobbies/photography-web/PhuYen/26-04-27%2010-26-57%2004170.jpg" alt="Fishers casting a circular net in the turquoise water near Mũi Điện, photographed from the headland above" loading="lazy"><figcaption>Fishers casting a circular net in the turquoise water near Mũi Điện.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/PhuYen/26-04-27%2010-34-32%2004179.jpg" alt="Waves breaking around the rugged coastal rocks below Mũi Điện" loading="lazy"><figcaption>Waves breaking around the rugged coastal rocks below Mũi Điện.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/PhuYen/26-04-29%2013-30-06%2004803.jpg" alt="Children from the local fishing community climbing over the rocks for a midday swim near Hòn Yến" loading="lazy"><figcaption>Children climbing over the rocks for a midday swim near Hòn Yến.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/PhuYen/26-05-16%2021-45-24%200352.jpg" alt="A sunlit portrait on Bãi Môn, a secluded beach sheltered between green hills below the Mũi Điện lighthouse" loading="lazy"><figcaption>A sunlit portrait on Bãi Môn, below the Mũi Điện lighthouse.</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Hàm Lợn -->
+            <div class="album">
+                <div class="album-head reveal">
+                    <h3>Hàm Lợn Mountain</h3>
+                    <span class="album-date">March 2026</span>
+                </div>
+                <p class="album-intro reveal">A popular trekking destination in Sóc Sơn, Hanoi — taken during a hike through its forested landscape and up to the summit.</p>
+                <div class="gallery">
+                    <figure class="photo"><img src="hobbies/photography-web/HamLon/26-03-15%2009-03-21%200212.jpg" alt="Our hiking group beside the summit marker in the mist" loading="lazy"><figcaption>Our hiking group beside the summit marker in the mist.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/HamLon/DSC02550.jpg" alt="A hazy panorama of Sóc Sơn seen from the mountain" loading="lazy"><figcaption>A hazy panorama of Sóc Sơn seen from the mountain.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/HamLon/DSC02756.jpg" alt="A hiker pauses to take in the view over the green hills and lowlands" loading="lazy"><figcaption>A hiker pauses to take in the view over the green hills and lowlands.</figcaption></figure>
+                </div>
+            </div>
+
+            <!-- Mid-Autumn + Family -->
+            <div class="album">
+                <div class="album-head reveal">
+                    <h3>Moments</h3>
+                    <span class="album-date">2025</span>
+                </div>
+                <p class="album-intro reveal">The frames in between — a festival night, and the people who matter most.</p>
+                <div class="gallery">
+                    <figure class="photo"><img src="hobbies/photography-web/mid-autum/DSC01985.jpg" alt="A small corner of Hàng Mã Street in Hanoi's Old Quarter, glowing with lanterns and decorations on the night of the 2025 Mid-Autumn Festival" loading="lazy"><figcaption>Hàng Mã Street, glowing with lanterns on the night of the 2025 Mid-Autumn Festival.</figcaption></figure>
+                    <figure class="photo"><img src="hobbies/photography-web/others/26-02-17%2010-34-05%200174.jpg" alt="A family portrait of my cousin, my grandfather, and me" loading="lazy"><figcaption>A family portrait of my cousin, my grandfather, and me.</figcaption></figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EPILOGUE ============ -->
+    <footer class="epilogue">
+        <p class="epilogue-line reveal">That's the story so far — the rest is still being written.</p>
+        <div class="epilogue-links reveal">
+            <a href="index.html" class="btn">&larr; Back to the classic version</a>
+            <a href="CV-AnhNH.pdf" target="_blank" class="btn btn-ghost">CV (PDF)</a>
+            <a href="mailto:anh.nh204511@gmail.com" class="btn btn-ghost">Email me</a>
+        </div>
+        <p class="copyright">&copy; 2026 Anh Nguyen Hoang</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+        <p id="lightbox-caption"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="story.js"></script>
+</body>
+</html>
