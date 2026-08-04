@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     tabs.forEach(tab => {
-        // The CV tab is an external link (opens in a new tab); leave the
+        // External links open in a new tab; leave the
         // in-page tab highlighting untouched when it's clicked.
-        if (tab.classList.contains('tab-cv')) return;
+        if (tab.target === '_blank') return;
         tab.addEventListener('click', function() {
             setActive(this.getAttribute('href'));
         });

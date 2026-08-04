@@ -76,6 +76,17 @@ a:hover {
     color: #fff;
 }
 
+.tab-blog {
+    background: #047857;
+    color: #fff;
+    border-color: #047857;
+}
+
+.tab-blog:hover {
+    background: #065f46;
+    color: #fff;
+}
+
 .tab-story {
     background: #7c3aed;
     color: #fff;
@@ -157,6 +168,10 @@ a:hover {
 }
 
 .social-icons a:nth-child(4) {
+    background: #047857;
+}
+
+.social-icons a:nth-child(5) {
     background: #d93025;
 }
 
@@ -308,6 +323,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 640px) {
+    .tab-nav {
+        flex-wrap: wrap;
+    }
+
     .profile {
         flex-direction: column;
         align-items: center;
