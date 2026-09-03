@@ -2,7 +2,7 @@
 
 **AI Researcher | PhD Candidate Seeker | Open Source Contributor**
 
-📍 Hanoi, Vietnam | 📧 anh.nh204511@gmail.com
+📍 Hanoi, Vietnam | 📧 anhnh.4work@gmail.com
 
 ---
 
@@ -78,7 +78,7 @@ Pioneered one of the first attempts to tackle **Vietnamese Handwritten Text Reco
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anhnh2002)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anh-nguyen-hoang-20860a252/)
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com/citations?user=FjCF32MAAAAJ&hl=vi&authuser=1)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anh.nh204511@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:anhnh.4work@gmail.com)
 
 ---
 
