@@ -1,0 +1,226 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.45in,top=0.4in,right=0.45in,bottom=0.4in]{geometry}
+\usepackage{enumitem}
+
+% Compact one-to-two page industry CV.
+\def\sectionskip{\smallskip}
+\def\sectionlineskip{\smallskip}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Anh Nguyen Hoang}
+
+\address{+84 398 272 620 \\ Hanoi, Vietnam (open to remote)}
+\address{
+    \href{mailto:anhnh.4work@gmail.com}{anhnh.4work@gmail.com} \\
+    \href{https://anhnh2002.github.io/}{Homepage} \\
+    \href{https://github.com/anhnh2002}{GitHub}
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+
+LLM application engineer with two years of hands-on experience shipping
+LLM-powered products and autonomous agents, from a consumer AI companion serving
+300,000+ users and roughly 100,000 messages per day to an open-source
+repository-documentation agent with 1,500+ GitHub stars. Strong background in
+agent design (planning, memory, tool calling, multi-agent orchestration),
+evaluation frameworks, and agent reliability, backed by publications at ACL,
+NAACL, and EMNLP. Comfortable owning a problem end to end, from ambiguous
+business need to measured, production-ready AI system.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{@{} >{\bfseries}p{0.2\textwidth} @{\hspace{2ex}} p{0.76\textwidth}}
+LLM \& Agents &
+    Agent architectures (planning, long-term memory, tool calling, multi-agent
+    orchestration), prompt engineering and optimization, RAG and vector search,
+    Model Context Protocol (MCP) tooling and security, LLM fine-tuning
+    (LoRA/full), evaluation harness and benchmark design, LLM-as-judge \\
+Engineering &
+    Python, PyTorch, Hugging Face Transformers, LLM APIs (OpenAI, Anthropic,
+    open-weight models), REST APIs, SQL/NoSQL databases, vector stores, Docker,
+    Git, Linux, CI and observability for AI systems \\
+Domains &
+    Conversational AI, AI for software engineering (code agents, program
+    repair, code migration, vulnerability detection), continual learning,
+    text-to-speech adaptation \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\textbf{FPT Software AI Center} \hfill May 2025 -- Present\\
+\textit{AI Research Resident (LLM agents for software engineering)}
+\hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Designed and built \textbf{CodeWiki}, an LLM agent framework that
+    generates holistic, repository-level documentation for large codebases
+    across seven programming languages; open-sourced to 1,500+ GitHub stars
+    and published at Findings of ACL 2026
+    \item Built the agent's planning, hierarchical decomposition, and
+    tool-calling pipeline for repository-scale context, plus an evaluation
+    benchmark and LLM-as-judge framework to measure documentation quality
+    \item Co-developed \textbf{RustPrint}, a documentation-guided agentic
+    system that migrates C codebases to Rust, coordinating multiple
+    specialized agents with automated build-and-test feedback loops
+    \item Leading \textbf{CHAIR}, a controller that automatically improves agent
+    harnesses through hypothesis generation, information-gain experiment
+    selection, and controlled single-factor evaluation
+    \item Collaborating with UIUC and Mila on agentic vulnerability detection
+    and on hardening coding agents against MCP tool-poisoning attacks
+\end{itemize}
+
+\vspace{0.3em}
+
+\textbf{Oraichain Labs} \hfill May 2024 -- April 2025\\
+\textit{AI Engineer} \hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Led development of \textbf{Cupiee}, an emotional AI companion platform
+    that grew to 300,000+ users and approximately 100,000 messages per day
+    \item Designed the conversational agent stack: persona and prompt design,
+    long-term user memory, retrieval over conversation history, and
+    safety and behavior guardrails; iterated on prompts and model choices
+    against user-engagement and quality metrics
+    \item Built autonomous multi-agent systems for social media engagement and
+    crypto market analysis, integrating LLMs with external APIs, scheduled
+    workflows, and data pipelines
+    \item Owned production concerns including latency, cost per message,
+    monitoring, and rapid experiment-deploy cycles
+\end{itemize}
+
+\vspace{0.3em}
+
+\textbf{Research Assistant, NLP and Continual Learning}
+\hfill March 2024 -- April 2025\\
+\textit{Advised by Prof.\ Linh Ngo Van (HUST) and Prof.\ Thien Huu Nguyen
+(University of Oregon)} \hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Researched few-shot continual learning for language models, designing
+    data-augmentation and generalization-preserving training methods;
+    equal-contribution first author at EMNLP 2024 and NAACL 2025
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SELECTED PROJECTS AND OPEN SOURCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Projects and Open Source}
+
+\textbf{\href{https://github.com/FSoft-AI4Code/CodeWiki}{CodeWiki}}
+\hfill 1,500+ GitHub stars\\
+Agentic framework for holistic documentation of large codebases; supports seven
+languages and ships with an evaluation benchmark for repository-level understanding
+
+\vspace{0.15em}
+
+\textbf{\href{https://github.com/anhnh2002/XTTSv2-Finetuning-for-New-Languages}
+{XTTSv2 Fine-Tuning for New Languages}}
+\hfill 200+ GitHub stars\\
+End-to-end toolkit for adapting the XTTSv2 speech-synthesis model to new languages,
+covering data prep, tokenizer extension, training, and inference
+
+\vspace{0.15em}
+
+\textbf{AI for Real Action 2025, Champion (Team Converged)}
+\hfill January 2026\\
+First prize among nearly 400 teams in Vietnam's first national AI competition,
+delivering a production-style AI solution under competition time constraints
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\begin{enumerate}[leftmargin=1.8em,label={[\arabic*]},itemsep=0.15em,topsep=0.1em]
+
+    \item \textbf{CodeWiki: Evaluating AI's Ability to Generate Holistic
+    Documentation for Large-Scale Codebases.}
+    A. Nguyen Hoang, M. Le-Anh, B. Le, N. D. Q. Bui.
+    \textit{Findings of ACL 2026.}
+    \href{https://arxiv.org/abs/2510.24428}{[Paper]}
+
+    \item \textbf{Beyond Repository Boundaries: Cross-Repository Graph
+    Retrieval for Code Generation.}
+    M. Le-Anh, N. Le Hai, Q. Tran, A. Nguyen Hoang, L. Ngo Van, B. Le,
+    N. D. Q. Bui.
+    \textit{Findings of EMNLP 2026.}
+    % TODO: add \href{<arxiv-url>}{[Paper]} once the preprint is available
+
+    \item \textbf{RustPrint: Documentation-Guided Agentic Codebase Migration
+    from C to Rust.}
+    M. Le-Anh, A. Nguyen Hoang, B. Le, N. D. Q. Bui.
+    \textit{Preprint, 2026.}
+    \href{https://arxiv.org/abs/2605.14634}{[Paper]}
+
+    \item \textbf{Mutual-Pairing Data Augmentation for Few-Shot Continual
+    Relation Extraction.}
+    N. H. Anh*, Q. Tran*, T. X. Nguyen*, et al.
+    \textit{NAACL 2025.}
+    \href{https://aclanthology.org/2025.naacl-long.205/}{[Paper]}
+
+    \item \textbf{Preserving Generalization of Language Models in Few-Shot
+    Continual Relation Extraction.}
+    Q. Tran*, N. X. Thanh*, N. H. Anh*, et al.
+    \textit{EMNLP 2024.}
+    \href{https://aclanthology.org/2024.emnlp-main.763/}{[Paper]}
+
+\end{enumerate}
+\textit{* equal contribution.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\textbf{Hanoi University of Science and Technology} \hfill 2020 -- 2024\\
+Bachelor of Science in Computer Science, GPA 3.75/4.0
+\hfill Ranked 15th of 296 (Top 5\%)
+
+\vspace{0.15em}
+
+\textbf{Techcombank Overseas PhD Study Sponsorship} (up to USD 333,000)
+\hfill April 2026
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Languages}
+
+Vietnamese (native), English (professional working proficiency, IELTS 7.0)
+
+\end{rSection}
+
+\end{document}
