@@ -30,7 +30,7 @@
 LLM application engineer with two years of hands-on experience shipping
 LLM-powered products and autonomous agents, from a consumer AI companion serving
 300,000+ users and roughly 100,000 messages per day to an open-source
-repository-documentation agent with 1,500+ GitHub stars. Strong background in
+repository-documentation agent with 1,700+ GitHub stars. Strong background in
 agent design (planning, memory, tool calling, multi-agent orchestration),
 evaluation frameworks, and agent reliability, backed by publications at ACL,
 NAACL, and EMNLP. Comfortable owning a problem end to end, from ambiguous
@@ -75,7 +75,7 @@ Domains &
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
     \item Designed and built \textbf{CodeWiki}, an LLM agent framework that
     generates holistic, repository-level documentation for large codebases
-    across seven programming languages; open-sourced to 1,500+ GitHub stars
+    across seven programming languages; open-sourced to 1,700+ GitHub stars
     and published at Findings of ACL 2026
     \item Built the agent's planning, hierarchical decomposition, and
     tool-calling pipeline for repository-scale context, plus an evaluation
@@ -86,8 +86,14 @@ Domains &
     \item Leading \textbf{CHAIR}, a controller that automatically improves agent
     harnesses through hypothesis generation, information-gain experiment
     selection, and controlled single-factor evaluation
-    \item Collaborating with UIUC and Mila on agentic vulnerability detection
-    and on hardening coding agents against MCP tool-poisoning attacks
+    \item Co-developed \textbf{FALCON}, a counterexample-grounded verification
+    framework that separates attack exploration from behavioral verification
+    to give coding models reliable security feedback, used both for
+    test-time repair and as an RL reward (under review)
+    \item Contributed to \textbf{SecPRBench}, a benchmark of 301 real-world
+    security review tasks with repository context and execution-based
+    verification for evaluating LLM agents on vulnerability detection in
+    code changes (under review)
 \end{itemize}
 
 \vspace{0.3em}
@@ -131,7 +137,7 @@ Domains &
 \begin{rSection}{Selected Projects and Open Source}
 
 \textbf{\href{https://github.com/FSoft-AI4Code/CodeWiki}{CodeWiki}}
-\hfill 1,500+ GitHub stars\\
+\hfill 1,700+ GitHub stars\\
 Agentic framework for holistic documentation of large codebases; supports seven
 languages and ships with an evaluation benchmark for repository-level understanding
 
@@ -172,6 +178,17 @@ delivering a production-style AI solution under competition time constraints
     N. D. Q. Bui.
     \textit{Findings of EMNLP 2026.}
     % TODO: add \href{<arxiv-url>}{[Paper]} once the preprint is available
+
+    \item \textbf{FALCON: A Counterexample-Grounded Verification Framework
+    for Secure Code Generation.}
+    T. Le, A. Nguyen Hoang, G. Sasseville, D. Jang, P.-L. Bacon, N. D. Q. Bui.
+    \textit{Under review.}
+
+    \item \textbf{SecPRBench: Can Language Model Agents Detect Vulnerabilities
+    in Code Changes?}
+    Y. Yang, C. Yang, Z. Zhao, A. Nguyen Hoang, Z. Zhang, W. Wang, Z. Lyu,
+    L. Zhang.
+    \textit{Under review.}
 
     \item \textbf{RustPrint: Documentation-Guided Agentic Codebase Migration
     from C to Rust.}
