@@ -2,6 +2,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const tabs = document.querySelectorAll('.tab');
     const nav = document.querySelector('.tab-nav');
 
+    // Keep anchor headings visible when the navigation wraps onto multiple rows.
+    const navResizeObserver = new ResizeObserver(() => {
+        document.documentElement.style.scrollPaddingTop = `${nav.offsetHeight + 10}px`;
+    });
+    navResizeObserver.observe(nav);
+
     // Map each section id to the tab that should be highlighted when it's in view.
     // The profile ("main") and news sections both belong to the "Main" tab.
     const sectionToTab = {
@@ -9,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         news: '#main',
         publications: '#publications',
         projects: '#projects',
+        funding: '#funding',
         contact: '#contact'
     };
 
@@ -26,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // The line sits ~30% down the viewport (but always clear of the nav) so a
         // section just scrolled under the nav by an anchor jump counts as current.
         const navBottom = nav.getBoundingClientRect().bottom;
-        const line = Math.max(navBottom + 1, window.innerHeight * 0.3);
+        const line = Math.max(navBottom + 11, window.innerHeight * 0.3);
         let current = sections[0];
         for (const section of sections) {
             if (section.getBoundingClientRect().top <= line) {
