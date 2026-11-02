@@ -6,11 +6,15 @@
 % Keep the academic CV compact without reducing the base 11pt font size.
 \def\sectionskip{\smallskip}
 \def\sectionlineskip{\smallskip}
+\setlength{\parskip}{0.3em}
 
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
-\name{Anh Nguyen Hoang}
+% References are shown by default (cold emails). resume_faangpath_norefs.tex
+% defines \norefs before \input-ing this file to drop them (applications).
+
+\name{Hoang Anh Nguyen}
 
 \address{+84 398 272 620 \\ Hanoi, Vietnam}
 \address{
@@ -18,6 +22,8 @@
     \href{https://anhnh2002.github.io/}{Homepage} \\
     \href{https://github.com/anhnh2002}{GitHub}
 }
+% A third \address is printed first, directly under the name.
+\address{\textit{Published as Anh Nguyen Hoang and Nguyen Hoang Anh}}
 
 \begin{document}
 
@@ -27,11 +33,10 @@
 
 \begin{rSection}{Research Interests}
 
-My current research focuses on AI for Software Engineering, particularly foundation
-models for code, autonomous coding agents, and long-horizon software evolution. I aim
-to study principled approaches for training and adapting code-focused language models,
-as well as designing reliable agentic systems for repository-scale software engineering
-tasks. I am also open to diversifying my research across related areas in the future.
+My research focuses on AI for Software Engineering, particularly foundation models for
+code, autonomous coding agents, and long-horizon software evolution. I aim to study
+principled approaches for training and adapting code language models and for designing
+reliable agentic systems for repository-scale tasks. I am also open to related areas.
 
 \end{rSection}
 
@@ -42,8 +47,8 @@ tasks. I am also open to diversifying my research across related areas in the fu
 \begin{rSection}{Education}
 
 \textbf{Hanoi University of Science and Technology} \hfill 2020 -- 2024\\
-Bachelor of Science in Computer Science\\
-GPA: 3.75/4.0 \hfill Ranked 15th of 296 students (Top 5\%)
+Bachelor of Science in Computer Science, GPA: 3.75/4.0
+\hfill Ranked 15th of 296 students (Top 5\%)
 
 \end{rSection}
 
@@ -69,7 +74,7 @@ GPA: 3.75/4.0 \hfill Ranked 15th of 296 students (Top 5\%)
     \textit{Minh Le-Anh, Nam Le Hai, Quyen Tran, \textbf{Anh Nguyen Hoang},
     Linh Ngo Van, Bach Le, Nghi D. Q. Bui}\\
     Findings of EMNLP 2026
-    % TODO: append \href{<arxiv-url>}{[Paper]} once the preprint is available
+    \href{https://arxiv.org/abs/2609.09987}{[Paper]}
 
     \item
     \textbf{Mutual-Pairing Data Augmentation for Few-Shot Continual Relation Extraction}\\
@@ -89,6 +94,14 @@ GPA: 3.75/4.0 \hfill Ranked 15th of 296 students (Top 5\%)
     \href{https://aclanthology.org/2024.emnlp-main.763/}{[Paper]}
     \href{https://github.com/thanhnx12/CRE-via-MMI}{[Code]}
 
+    \item
+    \textbf{Enhancing Few-Shot Continual Relation Extraction via\\
+    Pairwise Augmentation and Guided Sharpness-Aware Optimization}\\
+    \textit{Hoang Thanh Dat, \textbf{Nguyen Hoang Anh}, Nam Le Hai,
+    Linh Ngo Van, Sang Dinh}\\
+    Artificial Intelligence (AIJ), accepted
+    \href{https://www.sciencedirect.com/science/article/pii/S0004370226001712}{[Paper]}
+
 \end{enumerate}
 
 \end{rSection}
@@ -102,18 +115,22 @@ GPA: 3.75/4.0 \hfill Ranked 15th of 296 students (Top 5\%)
 \begin{enumerate}[leftmargin=1.8em,label={[\arabic*]},itemsep=0.1em,topsep=0.1em]
 
     \item
-    \textbf{FALCON: A Counterexample-Grounded Verification Framework for
-    Secure Code Generation}\\
+    \textbf{Secure Agentic Coding through Counterexample-Grounded
+    Feedback (FALCON)}\\
     \textit{Tue Le, \textbf{Anh Nguyen Hoang}, Gabriel Sasseville, Doseok Jang,
     Pierre-Luc Bacon, Nghi D. Q. Bui}\\
     Under review
+    \href{https://arxiv.org/abs/2610.25916}{[Paper]}
+    \href{https://github.com/FSoft-AI4Code/FALCON}{[Code]}
 
     \item
-    \textbf{SecPRBench: Can Language Model Agents Detect Vulnerabilities in
-    Code Changes?}\\
+    \textbf{Can Agentic Code Review Catch Vulnerabilities Before They Are
+    Merged?}\\
     \textit{Yihan Yang, Chenyuan Yang, Zijie Zhao, \textbf{Anh Nguyen Hoang},
     Ziqi Zhang, Weidong Wang, Zhiheng Lyu, Lingming Zhang}\\
     Under review
+    \href{https://secprbench.github.io/paper.pdf}{[Paper]}
+    \href{https://github.com/secprbench/secprbench}{[Code]}
 
     \item
     \textbf{RustPrint: Documentation-Guided Agentic Codebase Migration from C to Rust}\\
@@ -131,16 +148,23 @@ GPA: 3.75/4.0 \hfill Ranked 15th of 296 students (Top 5\%)
 
 \begin{rSection}{Honors and Awards}
 
-\textbf{Champion, AI for Real Action 2025}
+\textbf{Champion, AI for Real Action 2025} (Team Converged)
 \hfill January 2026\\
-First prize with Team Converged among nearly 400 teams in Vietnam's first
-national artificial intelligence competition
+First prize among nearly 400 teams in Vietnam's first national artificial
+intelligence competition
 
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
-    \item \textbf{Recipient, Techcombank Overseas PhD Study Sponsorship}
-    \hfill April 2026\\
-    Sponsorship limit of USD 333,000 for overseas PhD study
+    \item \textbf{Techcombank Overseas PhD Study Sponsorship:} awarded for
+    winning the competition; up to USD 333,000 for overseas PhD study
+    (April 2026)
     \href{https://anhnh2002.github.io/Letter_of_Offer_N.H.Anh.pdf}{[Offer Letter]}
+    \item \textbf{Vietnamese education LLM:} fully fine-tuned Qwen3-8B on 2K web
+    and textbook preference pairs with a weighted SFT + DPO loss (my proposal) to
+    learn new knowledge and answer in natural, respectful Vietnamese; scored about
+    12 percentage points above base Qwen3-8B on the competition's education benchmark
+    \item \textbf{STEM animation platform:} built the Manim code generation that
+    turns a STEM concept into an explainer video in about 2 minutes: the fine-tuned
+    model writes a scenario, then Manim code fixed in a render loop
 \end{itemize}
 
 \end{rSection}
@@ -149,7 +173,6 @@ national artificial intelligence competition
 % PROFESSIONAL EXPERIENCE
 %----------------------------------------------------------------------------------------
 
-\newpage
 \begin{rSection}{Experience}
 
 \textbf{FPT Software AI Center} \hfill May 2025 -- Present\\
@@ -158,16 +181,30 @@ Advisors: Associate Prof.\ Bach Le, University of Melbourne;
 Assistant Prof.\ Nghi D. Q. Bui, VinUniversity
 
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
-    \item Developed CodeWiki, an LLM-based framework that generates
-    holistic, repository-level documentation for large software projects
-    \item Co-developed FALCON, a counterexample-grounded verification
-    framework that provides execution-grounded security feedback for
-    secure code generation, used for test-time repair and as an RL reward
-    \item Contributed to SecPRBench, a benchmark of 301 security review tasks
-    from disclosed vulnerabilities for evaluating language model agents on
-    detecting vulnerabilities in real code changes
-    \item Research documentation-guided code migration and automated
-    program repair
+    \item \textbf{CodeWiki} (first author, Findings of ACL 2026): built an agentic
+    framework for repository-level documentation across seven languages by
+    decomposing the dependency graph into a module tree, delegating leaf modules
+    to documentation agents, and synthesizing parent-level text, architecture and
+    data-flow diagrams bottom-up
+    \item Built \textbf{CodeWikiBench}, a benchmark with hierarchical rubrics and
+    agentic LLM-judge evaluation; CodeWiki reaches a 68.79\% quality score,
+    +4.73 points over closed-source DeepWiki and +21.66 points over OpenDeepWiki,
+    with gains of up to 18.54\% on individual repositories
+    \item \textbf{RustPrint}: co-developed agentic C-to-Rust migration that uses
+    CodeWiki documentation as a blueprint and documentation mismatches as repair
+    signals; on eight C repositories (11K--84K LoC) it compiles every target where
+    prior LLM translators fail and, with Kimi-K2, beats Claude Code on feature
+    preservation (93.26\% vs.\ 52.52\%) and test pass rate (95.17\% vs.\ 79.85\%)
+    \item \textbf{FALCON} (under review): co-developed a security verifier that
+    separates attack exploration (proof-of-concept probes) from judging their
+    execution traces; as repair feedback it raises CWEval Func-Sec@1 by 25.2
+    points where LLM-as-a-judge brings almost no gain, and as an RL reward it
+    beats the REAL and SecCodePRM rewards
+    \item \textbf{SecPRBench} (under review, with Prof.\ Lingming Zhang, UIUC):
+    curated the FFmpeg, FreeType, and SQLite tasks of a benchmark of 265
+    vulnerability-introducing changes from nine C, C++, and Rust projects, each
+    paired with its repaired version; agents on eight model backends detect only
+    32.5\%--78.1\% of the target vulnerabilities
 \end{itemize}
 
 \vspace{0.25em}
@@ -178,8 +215,15 @@ Assistant Prof.\ Nghi D. Q. Bui, VinUniversity
 Advisors: Assistant Prof.\ Linh Ngo Van; Associate Prof.\ Thien Huu Nguyen
 
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
-    \item Researched few-shot continual relation extraction and generalization,
-    resulting in equal-contribution papers at EMNLP 2024 and NAACL 2025
+    \item \textbf{Mutual-pairing data augmentation} (co-first author, NAACL 2025):
+    combined old and new relation samples into composite inputs with objectives
+    that induce adversarial-training effects, cutting the accuracy drop to 26.40\%
+    on FewRel and 24.36\% on TACRED (2.49\% better than CPL on TACRED); showed
+    that Sharpness-Aware Minimization costs over 6\% accuracy with LLM2Vec
+    \item \textbf{Generalization preservation} (co-first author, EMNLP 2024):
+    reused discarded pre-trained LM heads through mutual-information
+    maximization with the classifier, improving final accuracy by about 2\% for
+    CPL and ConPL, 1\% for SCKD, and up to 3.75\% with LLaMA-2-7B
 \end{itemize}
 
 \vspace{0.25em}
@@ -189,10 +233,9 @@ Advisors: Assistant Prof.\ Linh Ngo Van; Associate Prof.\ Thien Huu Nguyen
 
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
     \item Led the development of Cupiee, an emotional AI companion platform
-    with more than 300,000 users and approximately 100,000
-    messages per day
-    \item Designed autonomous multi-agent systems for social media engagement
-    and market analysis
+    with 300,000+ users and about 100,000 messages per day
+    \item Built Cupiee's voice-agent companion; 30-day user retention rose from
+    13\% to 47\% after its release
 \end{itemize}
 
 \end{rSection}
@@ -205,14 +248,15 @@ Advisors: Assistant Prof.\ Linh Ngo Van; Associate Prof.\ Thien Huu Nguyen
 
 \textbf{\href{https://github.com/FSoft-AI4Code/CodeWiki}{CodeWiki}}
 \hfill 1,700+ GitHub stars\\
-Open-source repository documentation framework supporting seven programming languages
+Repository-level documentation framework for seven languages, with CodeWikiBench
 
 \vspace{0.15em}
 
 \textbf{\href{https://github.com/anhnh2002/XTTSv2-Finetuning-for-New-Languages}
 {XTTSv2-Finetuning-for-New-Languages}}
 \hfill 200+ GitHub stars\\
-Toolkit for adapting the XTTSv2 speech-synthesis model to new languages
+Adapts XTTSv2 text-to-speech to any language, with a released Vietnamese model;
+sliding-window streaming cuts time to first audio from about 1 s to 200 ms on the same hardware
 
 \end{rSection}
 
@@ -223,13 +267,11 @@ Toolkit for adapting the XTTSv2 speech-synthesis model to new languages
 
 \begin{rSection}{Languages}
 
-\begin{tabular}{@{} >{\bfseries}l @{\hspace{4ex}} l}
-Vietnamese & Native proficiency \\
-English & Professional working proficiency (IELTS 7.0) \\
-\end{tabular}
+Vietnamese (native), English (IELTS 7.0, TOEFL 5.0)
 
 \end{rSection}
 
+\ifdefined\norefs\else
 %----------------------------------------------------------------------------------------
 % REFERENCES
 %----------------------------------------------------------------------------------------
@@ -278,5 +320,6 @@ English & Professional working proficiency (IELTS 7.0) \\
 \end{minipage}
 
 \end{rSection}
+\fi
 
 \end{document}

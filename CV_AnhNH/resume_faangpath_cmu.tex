@@ -1,0 +1,63 @@
+% CMU application CV: the no-references version with all web URLs printed at
+% the end, because the admissions system may not preserve embedded links.
+% Build from CV_AnhNH with:
+% pdflatex -jobname=CV-AnhNH-CMU -output-directory=<build-dir> resume_faangpath_cmu.tex
+\def\norefs{}
+
+\makeatletter
+\newcounter{cmuurl}
+\newcommand{\cmuurllist}{}
+
+% Register each URL once, including links reused in the software section.
+\newcommand{\cmurecordurl}[1]{%
+  \ifcsname cmuurl@\detokenize{#1}\endcsname\else
+    \stepcounter{cmuurl}%
+    \expandafter\xdef\csname cmuurl@\detokenize{#1}\endcsname{\arabic{cmuurl}}%
+    \g@addto@macro\cmuurllist{\cmuurlentry{#1}}%
+  \fi
+}
+
+% Each printed URL is both an internal destination and an external link.
+\newcommand{\cmuurlentry}[1]{%
+  \item \hypertarget{cmuurl.\csname cmuurl@\detokenize{#1}\endcsname}{%
+    \cmuexternalhref{#1}{\nolinkurl{#1}}%
+  }%
+}
+
+% Keep the email visible in the header; mark web links with U1, U2, etc.
+% The U prefix distinguishes URL markers from publication numbers.
+\newcommand{\cmulink}[2]{%
+  \ifstrequal{#1}{mailto:anhnh.4work@gmail.com}{#2}{%
+    \cmurecordurl{#1}%
+    \ifstrequal{#2}{[Paper]}{Paper}{%
+      \ifstrequal{#2}{[Code]}{Code}{%
+        \ifstrequal{#2}{[Preprint]}{Preprint}{%
+          \ifstrequal{#2}{[Offer Letter]}{Offer Letter}{#2}%
+        }%
+      }%
+    }%
+    \hyperlink{cmuurl.\csname cmuurl@\detokenize{#1}\endcsname}{%
+      \textsuperscript{\normalfont U\csname cmuurl@\detokenize{#1}\endcsname}%
+    }%
+  }%
+}
+\makeatother
+
+% Configure the shared CV after its class has loaded hyperref, before its
+% header is defined. Preserve visible URLs even when links are stripped.
+\AddToHook{class/resume/after}{%
+  \hypersetup{draft=false,colorlinks=true,linkcolor=blue,urlcolor=blue,pdftitle={Hoang Anh Nguyen - CMU CV},pdfauthor={Hoang Anh Nguyen}}%
+  \let\cmuexternalhref\href
+  \let\href\cmulink
+}
+
+\AtEndDocument{%
+  \clearpage
+  \begin{rSection}{URLs}
+    \begin{enumerate}[leftmargin=2.6em,label={U\arabic*.},itemsep=0.1em,topsep=0.1em]
+      \cmuurllist
+    \end{enumerate}
+  \end{rSection}
+}
+
+\input{resume_faangpath}

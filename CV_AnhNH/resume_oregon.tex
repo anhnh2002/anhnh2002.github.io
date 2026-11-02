@@ -1,0 +1,235 @@
+% University of Oregon application CV, emphasizing LLM post-training and agents.
+% Build from CV_AnhNH:
+% pdflatex -jobname=CV-AnhNH-Oregon -output-directory=<build-dir> resume_oregon.tex
+\documentclass{resume}
+
+\usepackage[left=0.4in,top=0.3in,right=0.4in,bottom=0.3in]{geometry}
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\def\sectionskip{\smallskip}
+\def\sectionlineskip{\smallskip}
+\setlength{\parskip}{0.2em}
+\hypersetup{
+    pdftitle={Hoang Anh Nguyen -- University of Oregon CV},
+    pdfauthor={Hoang Anh Nguyen}
+}
+
+\name{Hoang Anh Nguyen}
+\address{+84 398 272 620 \\ Hanoi, Vietnam}
+\address{
+    \href{mailto:anhnh.4work@gmail.com}{anhnh.4work@gmail.com} \\
+    \href{https://anhnh2002.github.io/}{Homepage} \\
+    \href{https://github.com/anhnh2002}{GitHub}
+}
+\address{\textit{Published as Anh Nguyen Hoang and Nguyen Hoang Anh}}
+
+\begin{document}
+
+\begin{rSection}{Research Interests}
+
+My research interests center on post-training large language models for long-horizon
+agentic tasks. I aim to study how models learn to maintain relevant information, use
+tools, and revise decisions from demonstrations and trustworthy feedback, while
+generalizing to new tasks and retaining earlier capabilities. My background spans
+continual learning, model adaptation, and software agents.
+
+\end{rSection}
+
+\begin{rSection}{Education}
+
+\textbf{Hanoi University of Science and Technology} \hfill 2020 -- 2024\\
+Bachelor of Science in Computer Science, GPA: 3.75/4.0
+\hfill Ranked 15th of 296 students (Top 5\%)
+
+\end{rSection}
+
+\begin{rSection}{Selected Post-Training Project}
+
+\textbf{Vietnamese Education LLM} \hfill AI for Real Action 2025\\
+Proposed a weighted objective combining supervised fine-tuning (SFT) and direct
+preference optimization (DPO); fully fine-tuned Qwen3-8B on 2K web and textbook
+preference pairs for educational knowledge and natural, respectful Vietnamese
+responses. Improved the competition's education benchmark by about 12 percentage
+points over the base model.
+
+\end{rSection}
+
+% Highlight agent research alongside training-objective design and retention.
+\begin{rSection}{Publications}
+
+\begin{enumerate}[leftmargin=1.8em,label={[\arabic*]},itemsep=0.1em,topsep=0.1em]
+    \item
+    \textbf{CodeWiki: Evaluating AI's Ability to Generate Holistic Documentation
+    for Large-Scale Codebases}\\
+    \textit{\textbf{Anh Nguyen Hoang}, Minh Le-Anh, Bach Le, Nghi D. Q. Bui}\\
+    Findings of ACL 2026
+    \href{https://aclanthology.org/2026.findings-acl.288/}{[Paper]}
+    \href{https://github.com/FSoft-AI4Code/CodeWiki}{[Code]}
+
+    \item
+    \textbf{Mutual-Pairing Data Augmentation for Few-Shot Continual Relation Extraction}\\
+    \textit{\textbf{Nguyen Hoang Anh*}, Quyen Tran*, Thanh Xuan Nguyen*,
+    Nguyen Thi Ngoc Diep, Linh Ngo Van, Thien Huu Nguyen, Trung Le}\\
+    NAACL 2025
+    \href{https://aclanthology.org/2025.naacl-long.205/}{[Paper]}
+    \href{https://github.com/anhnh2002/mutual-pairing-data-augmentation}{[Code]}
+    \hfill \textit{* denotes equal contribution.}
+
+    \item
+    \textbf{Preserving Generalization of Language Models in Few-Shot Continual
+    Relation Extraction}\\
+    \textit{Quyen Tran*, Nguyen Xuan Thanh*, \textbf{Nguyen Hoang Anh*},
+    Nam Le Hai, Trung Le, Linh Van Ngo, Thien Huu Nguyen}\\
+    EMNLP 2024
+    \href{https://aclanthology.org/2024.emnlp-main.763/}{[Paper]}
+    \href{https://github.com/thanhnx12/CRE-via-MMI}{[Code]}
+
+    \item
+    \textbf{Beyond Repository Boundaries: Cross-Repository Graph Retrieval
+    for Code Generation}\\
+    \textit{Minh Le-Anh, Nam Le Hai, Quyen Tran, \textbf{Anh Nguyen Hoang},
+    Linh Ngo Van, Bach Le, Nghi D. Q. Bui}\\
+    Findings of EMNLP 2026
+    \href{https://arxiv.org/abs/2609.09987}{[Paper]}
+
+    \item
+    \textbf{Enhancing Few-Shot Continual Relation Extraction via\\
+    Pairwise Augmentation and Guided Sharpness-Aware Optimization}\\
+    \textit{Hoang Thanh Dat, \textbf{Nguyen Hoang Anh}, Nam Le Hai,
+    Linh Ngo Van, Sang Dinh}\\
+    Artificial Intelligence (AIJ), accepted
+    \href{https://www.sciencedirect.com/science/article/pii/S0004370226001712}{[Paper]}
+
+\end{enumerate}
+
+\end{rSection}
+
+\begin{rSection}{Research Experience: Continual Learning}
+
+\textbf{Research Assistant} \hfill March 2024 -- April 2025\\
+\textit{Continual Learning and Natural Language Processing}
+\hfill \textit{Hanoi, Vietnam}\\
+Advisors: Assistant Prof.\ Linh Ngo Van, HUST;
+Associate Prof.\ Thien Huu Nguyen, University of Oregon
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Studied \textbf{few-shot continual relation extraction}: learning new
+    relation types from limited labeled examples while retaining previously
+    learned relations and pretrained language knowledge
+    \item \textbf{Mutual-pairing data augmentation} (co-first author, NAACL 2025):
+    designed augmentation and training objectives combining old and new relation
+    examples into richer inputs without additional labels; reduced the accuracy drop to
+    26.40\% on FewRel and 24.36\% on TACRED, with a 2.49\% improvement over
+    CPL on TACRED
+    \item \textbf{Preserving pretrained generalization} (co-first author, EMNLP 2024):
+    reused pretrained LM heads through mutual-information maximization with the
+    task classifier; improved final accuracy by about 2\% for CPL and ConPL,
+    1\% for SCKD, and up to 3.75\% with LLaMA-2-7B
+    \item Investigated the interaction between representation learning and
+    continual adaptation; found that Sharpness-Aware Minimization reduced
+    accuracy by over 6\% when used with LLM2Vec
+\end{itemize}
+
+\end{rSection}
+
+\newpage
+\vspace*{0.8em}
+
+\begin{rSection}{Research Experience: Language-Model Agents}
+
+\textbf{FPT Software AI Center} \hfill May 2025 -- Present\\
+\textit{AI Research Resident} \hfill \textit{Hanoi, Vietnam}\\
+Advisors: Associate Prof.\ Bach Le, University of Melbourne;
+Assistant Prof.\ Nghi D. Q. Bui, VinUniversity
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item \textbf{CodeWiki} (first author, Findings of ACL 2026): built an LLM-agent
+    framework that generates repository-level documentation across seven
+    programming languages through hierarchical context decomposition and
+    bottom-up synthesis of module explanations
+    \item \textbf{CodeWikiBench}: built hierarchical evaluation rubrics and
+    agentic LLM-judge evaluation; CodeWiki achieves a 68.79\% quality score,
+    +4.73 points over DeepWiki and +21.66 points over OpenDeepWiki
+    \item \textbf{FALCON} (under review): refined execution-grounded checks that
+    reject fabricated evidence in generated attack tests and link reported events
+    to target execution; the framework improved CWEval Func-Sec@1 by 25.2 points
+    as repair feedback
+    \item \textbf{RustPrint} (preprint): co-developed documentation-guided C-to-Rust
+    migration; with Kimi-K2, preserved 93.26\% of evaluated features across eight
+    C repositories, compared with 52.52\% for a Claude Code baseline
+    \item \textbf{SecPRBench} (under review, with Prof.\ Lingming Zhang, UIUC):
+    curated FFmpeg, FreeType, and SQLite tasks for a benchmark of 265
+    vulnerability-introducing code changes paired with their repairs
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Preprints and Under Review}
+
+\begin{enumerate}[leftmargin=1.8em,label={[\arabic*]},itemsep=0.1em,topsep=0.1em]
+    \item
+    \textbf{Secure Agentic Coding through Counterexample-Grounded
+    Feedback (FALCON)}\\
+    \textit{Tue Le, \textbf{Anh Nguyen Hoang}, Gabriel Sasseville, Doseok Jang,
+    Pierre-Luc Bacon, Nghi D. Q. Bui}\\
+    Under review
+    \href{https://arxiv.org/abs/2610.25916}{[Paper]}
+    \href{https://github.com/FSoft-AI4Code/FALCON}{[Code]}
+
+    \item
+    \textbf{Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?}\\
+    \textit{Yihan Yang, Chenyuan Yang, Zijie Zhao, \textbf{Anh Nguyen Hoang},
+    Ziqi Zhang, Weidong Wang, Zhiheng Lyu, Lingming Zhang}\\
+    Under review
+    \href{https://secprbench.github.io/paper.pdf}{[Paper]}
+    \href{https://github.com/secprbench/secprbench}{[Code]}
+
+    \item
+    \textbf{RustPrint: Documentation-Guided Agentic Codebase Migration from C to Rust}\\
+    \textit{Minh Le-Anh, \textbf{Anh Nguyen Hoang}, Bach Le, Nghi D. Q. Bui}\\
+    Preprint, 2026
+    \href{https://arxiv.org/abs/2605.14634}{[Preprint]}
+\end{enumerate}
+
+\end{rSection}
+
+\begin{rSection}{Industry Experience}
+
+\textbf{Oraichain Labs} \hfill May 2024 -- April 2025\\
+\textit{AI Engineer} \hfill \textit{Hanoi, Vietnam}
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Led development of \textbf{Cupiee}, an emotional AI companion platform
+    with 300,000+ users and about 100,000 messages per day
+    \item Built its voice-agent companion; 30-day retention rose from 13\% to
+    47\% following release
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Honors and Awards}
+
+\textbf{Champion, AI for Real Action 2025} (Team Converged) \hfill January 2026\\
+First prize among nearly 400 teams in Vietnam's first national AI competition
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item \textbf{Techcombank Overseas PhD Study Sponsorship}: up to USD 333,000
+    for overseas PhD study, awarded following the competition (April 2026)
+    \href{https://anhnh2002.github.io/Letter_of_Offer_N.H.Anh.pdf}{[Offer Letter]}
+\end{itemize}
+
+\end{rSection}
+
+\begin{rSection}{Selected Open-Source Software}
+
+\textbf{\href{https://github.com/anhnh2002/XTTSv2-Finetuning-for-New-Languages}
+{XTTSv2-Finetuning-for-New-Languages}} \hfill 200+ GitHub stars\\
+Toolkit for adapting XTTSv2 to new languages, including a released Vietnamese model;
+sliding-window streaming reduces time to first audio from about 1 s to 200 ms
+
+\end{rSection}
+
+\begin{rSection}{Languages}
+Vietnamese (native), English (IELTS 7.0, TOEFL 5.0)
+\end{rSection}
+
+\end{document}
