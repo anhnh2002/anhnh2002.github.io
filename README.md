@@ -28,6 +28,10 @@ My research focuses on developing algorithms to train and fine-tune **Large Lang
 
 ### 📄 **Peer-Reviewed Publications**
 
+**EACL 2027 (accepted)**
+- *GeoDPO: Geometric Token Importance for Stable LLM Alignment*
+- Dat Phi Van, **Anh Nguyen Hoang**, Linh Ngo Van, Thien Huu Nguyen, Thanh-Toan Do, Thanh Hong Nguyen, Trung Le
+
 **EMNLP 2024**
 - *Preserving generalization of language models in few-shot continual relation extraction*
 - **Quyen Tran***, **Nguyen Xuan Thanh***, **Nguyen Hoang Anh***, Nam Le Hai, Trung Le, Linh Van Ngo, Thien Huu Nguyen
