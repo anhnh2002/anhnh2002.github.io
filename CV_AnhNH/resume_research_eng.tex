@@ -1,0 +1,267 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.45in,top=0.3in,right=0.45in,bottom=0.3in]{geometry}
+\usepackage{enumitem}
+
+% Research-engineer CV: same facts as resume_industry_llm.tex, ordered so that
+% benchmark, evaluation, and verification work comes first.
+\def\sectionskip{\smallskip}
+\def\sectionlineskip{\smallskip}
+\setlength{\parskip}{0.3em}
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+\name{Hoang Anh Nguyen}
+
+\address{+84 398 272 620 \\ Hanoi, Vietnam (open to remote)}
+\address{
+    \href{mailto:anhnh.4work@gmail.com}{anhnh.4work@gmail.com} \\
+    \href{https://anhnh2002.github.io/}{Homepage} \\
+    \href{https://github.com/anhnh2002}{GitHub}
+}
+% A third \address is printed first, directly under the name.
+\address{\textit{Published as Anh Nguyen Hoang and Nguyen Hoang Anh}}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% SUMMARY
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+
+Research engineer working on LLM agents and on how to evaluate them. At FPT
+Software AI Center I build coding agents for repository-scale tasks together
+with the benchmarks and verifiers that measure them: CodeWikiBench
+(hierarchical rubrics with an agentic LLM judge), tasks for SecPRBench (265
+real code changes that introduced vulnerabilities), and FALCON
+(counterexample-grounded security feedback). Publications at ACL, EACL, NAACL,
+and EMNLP, and an open-source agent framework with 1,700+ GitHub stars.
+Earlier, I led development of a consumer AI companion that grew to 300,000+
+users.
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SKILLS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{@{} >{\bfseries}p{0.2\textwidth} @{\hspace{2ex}} p{0.76\textwidth}}
+Evaluation &
+    Benchmark and task design, hierarchical rubrics, LLM-as-judge and agentic
+    judging, execution-based verification, evaluation harnesses, controlled
+    single-factor experiments \\
+LLM \& Agents &
+    Agent architectures (planning, long-term memory, tool calling, multi-agent
+    orchestration), prompt engineering and optimization, RAG and vector search,
+    Model Context Protocol (MCP) tooling and security, LLM fine-tuning
+    (SFT, DPO; LoRA/full) \\
+Engineering &
+    Python, PyTorch, Hugging Face Transformers, LLM APIs (OpenAI, Anthropic,
+    open-weight models), REST APIs, SQL/NoSQL databases, vector stores, Docker,
+    Git, Linux, CI and observability for AI systems \\
+Domains &
+    AI for software engineering (code agents, program repair, code migration,
+    vulnerability detection), conversational AI, continual learning \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\textbf{FPT Software AI Center} \hfill May 2025 -- Present\\
+\textit{AI Research Resident (LLM agents for software engineering)}
+\hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Designed and built \textbf{CodeWiki} (first author, Findings of ACL
+    2026), an agent framework for repository-level documentation across seven
+    languages: it decomposes the dependency graph into a module tree, delegates
+    leaf modules to documentation agents, and synthesizes parent-level text
+    and diagrams bottom-up; open-sourced to 1,700+ GitHub stars
+    \item Built \textbf{CodeWikiBench}, a benchmark with hierarchical rubrics
+    and agentic LLM-judge evaluation for repository documentation; CodeWiki
+    scores 68.79\%, +4.73 points over closed-source DeepWiki and +21.66 points
+    over OpenDeepWiki
+    \item Curated the FFmpeg, FreeType, and SQLite tasks of \textbf{SecPRBench}
+    (with UIUC, under review), a benchmark of 265 real code changes that
+    introduced vulnerabilities in nine C, C++, and Rust projects, each paired
+    with its repaired version; LLM agents on eight model backends detect only
+    32.5\%--78.1\% of the vulnerabilities
+    \item Co-developed \textbf{FALCON} (under review), a
+    counterexample-grounded verification framework that separates attack
+    exploration from judging execution traces, so coding models get security
+    feedback they cannot fake; as repair feedback it raises CWEval Func-Sec@1
+    by 25.2 points where LLM-as-a-judge brings almost no gain, and as an RL
+    reward it beats the REAL and SecCodePRM rewards
+    \item Leading \textbf{CHAIR}, a controller that automatically improves agent
+    harnesses through hypothesis generation, information-gain experiment
+    selection, and controlled single-factor evaluation
+    \item Co-developed \textbf{RustPrint}, a documentation-guided multi-agent
+    system that migrates C codebases to Rust with build-and-test feedback
+    loops; on eight C repositories (11K--84K LoC) it compiles every target and,
+    with Kimi-K2, beats Claude Code on feature preservation (93.26\% vs.\
+    52.52\%) and test pass rate (95.17\% vs.\ 79.85\%)
+\end{itemize}
+
+\vspace{0.3em}
+
+\textbf{Oraichain Labs} \hfill May 2024 -- April 2025\\
+\textit{AI Engineer} \hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Led development of \textbf{Cupiee}, an emotional AI companion platform
+    that grew to 300,000+ users and about 100,000 messages per day
+    \item Built Cupiee's voice-agent companion; 30-day user retention rose from
+    13\% to 47\% after its release
+    \item Designed the conversational agent stack: persona and prompt design,
+    long-term user memory, retrieval over conversation history, and safety
+    guardrails, tuned against engagement and quality metrics
+    \item Owned production concerns including latency, cost per message,
+    monitoring, and rapid experiment-deploy cycles
+\end{itemize}
+
+\vspace{0.3em}
+
+\textbf{Research Assistant, NLP and Continual Learning}
+\hfill March 2024 -- April 2025\\
+\textit{Advised by Prof.\ Linh Ngo Van (HUST) and Prof.\ Thien Huu Nguyen
+(University of Oregon)} \hfill \textit{Hanoi, Vietnam}
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Researched few-shot continual learning for language models
+    (equal-contribution first author at NAACL 2025 and EMNLP 2024): a
+    mutual-pairing data augmentation cut forgetting to a 24.36\% accuracy drop
+    on TACRED (2.49\% better than CPL), and reusing pre-trained LM heads via
+    mutual-information maximization added up to 3.75\% accuracy with LLaMA-2-7B
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% SELECTED PROJECTS AND OPEN SOURCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Selected Projects and Open Source}
+
+\textbf{\href{https://github.com/FSoft-AI4Code/CodeWiki}{CodeWiki}}
+\hfill 1,700+ GitHub stars\\
+Agentic repository documentation for seven languages, with the CodeWikiBench benchmark
+
+\vspace{0.15em}
+
+\textbf{\href{https://github.com/anhnh2002/XTTSv2-Finetuning-for-New-Languages}
+{XTTSv2 Fine-Tuning for New Languages}}
+\hfill 200+ GitHub stars\\
+Toolkit for adapting XTTSv2 text-to-speech to any language, with a released Vietnamese
+model; sliding-window streaming cuts time to first audio from about 1 s to 200 ms
+
+\vspace{0.15em}
+
+\textbf{AI for Real Action 2025, Champion (Team Converged)}
+\hfill January 2026\\
+First prize among nearly 400 teams in Vietnam's first national AI competition
+
+\begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    \item Fully fine-tuned Qwen3-8B on 2K web and textbook preference pairs with a
+    weighted SFT + DPO loss (my proposal) to learn new knowledge and answer in
+    natural, respectful Vietnamese; scored about 12 percentage points above base
+    Qwen3-8B on the competition's education benchmark
+    \item Built the Manim code generation for a platform that turns a STEM concept
+    into an animated explainer video in about 2 minutes: the fine-tuned model
+    writes a scenario, then Manim code fixed in a render loop
+\end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+
+\begin{enumerate}[leftmargin=1.8em,label={[\arabic*]},itemsep=0em,topsep=0.1em]
+
+    \item \textbf{CodeWiki: Evaluating AI's Ability to Generate Holistic
+    Documentation for Large-Scale Codebases.}
+    A. Nguyen Hoang, M. Le-Anh, B. Le, N. D. Q. Bui.
+    \textit{Findings of ACL 2026.}
+    \href{https://arxiv.org/abs/2510.24428}{[Paper]}
+
+    \item \textbf{Can Agentic Code Review Catch Vulnerabilities Before They
+    Are Merged?}
+    Y. Yang, C. Yang, Z. Zhao, A. Nguyen Hoang, Z. Zhang, W. Wang, Z. Lyu,
+    L. Zhang.
+    \textit{Under review.}
+    \href{https://secprbench.github.io/paper.pdf}{[Paper]}
+    \href{https://github.com/secprbench/secprbench}{[Code]}
+
+    \item \textbf{Secure Agentic Coding through Counterexample-Grounded
+    Feedback (FALCON).}
+    T. Le, A. Nguyen Hoang, G. Sasseville, D. Jang, P.-L. Bacon, N. D. Q. Bui.
+    \textit{Under review.}
+    \href{https://arxiv.org/abs/2610.25916}{[Paper]}
+    \href{https://github.com/FSoft-AI4Code/FALCON}{[Code]}
+
+    \item \textbf{RustPrint: Documentation-Guided Agentic Codebase Migration
+    from C to Rust.}
+    M. Le-Anh, A. Nguyen Hoang, B. Le, N. D. Q. Bui.
+    \textit{Preprint, 2026.}
+    \href{https://arxiv.org/abs/2605.14634}{[Paper]}
+
+    \item \textbf{Beyond Repository Boundaries: Cross-Repository Graph
+    Retrieval for Code Generation.}
+    M. Le-Anh, N. Le Hai, Q. Tran, A. Nguyen Hoang, L. Ngo Van, B. Le,
+    N. D. Q. Bui.
+    \textit{Findings of EMNLP 2026.}
+    \href{https://arxiv.org/abs/2609.09987}{[Paper]}
+
+    \item \textbf{GeoDPO: Geometric Token Importance for Stable LLM Alignment.}
+    Dat Phi Van, Anh Nguyen Hoang, Linh Ngo Van, Thien Huu Nguyen,
+    Thanh-Toan Do, Thanh Hong Nguyen, Trung Le.
+    \textit{EACL 2027.}
+
+    \item \textbf{Mutual-Pairing Data Augmentation for Few-Shot Continual
+    Relation Extraction.}
+    N. H. Anh*, Q. Tran*, T. X. Nguyen*, et al.
+    \textit{NAACL 2025.}
+    \href{https://aclanthology.org/2025.naacl-long.205/}{[Paper]}
+
+    \item \textbf{Preserving Generalization of Language Models in Few-Shot
+    Continual Relation Extraction.}
+    Q. Tran*, N. X. Thanh*, N. H. Anh*, et al.
+    \textit{EMNLP 2024.}
+    \href{https://aclanthology.org/2024.emnlp-main.763/}{[Paper]}
+
+    \item \textbf{Enhancing Few-Shot Continual Relation Extraction via
+    Pairwise Augmentation and Guided Sharpness-Aware Optimization.}
+    H. T. Dat*, N. H. Anh*, N. Le Hai*, L. Ngo Van, S. Dinh.
+    \textit{Artificial Intelligence (AIJ), accepted.}
+    \href{https://www.sciencedirect.com/science/article/pii/S0004370226001712}{[Paper]}
+
+\end{enumerate}
+\textit{* denotes equal contribution.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\textbf{Hanoi University of Science and Technology} \hfill 2020 -- 2024\\
+Bachelor of Science in Computer Science, GPA 3.75/4.0
+\hfill Ranked 15th of 296 (Top 5\%)\\
+\textbf{Languages:} Vietnamese (native), English (IELTS 7.0, TOEFL 5.0)
+
+\end{rSection}
+
+\end{document}

@@ -249,6 +249,62 @@ h2 {
     line-height: 1.6;
 }
 
+/* Selected / All toggle: visually hidden radios driven by their labels. */
+.pub-view-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
+
+.pub-view-toggle {
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.pub-view-toggle label {
+    color: #00c;
+    cursor: pointer;
+}
+
+.pub-view-toggle label:hover {
+    text-decoration: underline;
+}
+
+#pub-view-selected:checked ~ .pub-view-toggle label[for="pub-view-selected"],
+#pub-view-all:checked ~ .pub-view-toggle label[for="pub-view-all"] {
+    color: #000;
+    font-weight: bold;
+    cursor: default;
+    text-decoration: none;
+}
+
+#pub-view-selected:focus-visible ~ .pub-view-toggle label[for="pub-view-selected"],
+#pub-view-all:focus-visible ~ .pub-view-toggle label[for="pub-view-all"] {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
+/* In the "Selected" view, hide every paper not marked as selected. */
+#pub-view-selected:checked ~ .pub-list li:not(.pub-selected) {
+    display: none;
+}
+
+/* The Selected view can pin papers out of list order via --selected-order. */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+}
+
+#pub-view-selected:checked ~ .pub-list li {
+    order: var(--selected-order, 99);
+}
+
 .pub-title-row {
     display: inline;
 }

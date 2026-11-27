@@ -61,6 +61,9 @@
                         <strong>Nov 2026:</strong> Our paper <em>"GeoDPO: Geometric Token Importance for Stable LLM Alignment"</em> has been accepted at <strong>EACL 2027</strong>!
                     </li>
                     <li>
+                        <strong>Oct 2026:</strong> Our paper <em>"Enhancing Few-shot Continual Relation Extraction via Pairwise Augmentation and Guided Sharpness-Aware Optimization"</em> has been published in the journal <strong>Artificial Intelligence (AIJ)</strong>!
+                    </li>
+                    <li>
                         <strong>Aug 2026:</strong> Our paper <em>"Beyond Repository Boundaries: Cross-Repository Graph Retrieval for Code Generation"</em> has been accepted at <strong>Findings of EMNLP 2026</strong>!
                     </li>
                     <li>
@@ -90,8 +93,20 @@
             <section id="publications" class="publications-section">
                 <h2>Publications</h2>
 
+                <!-- View toggle (CSS-only). To feature a paper under "Selected papers",
+                     add class="pub-selected" to its <li> below. "All papers" follows the
+                     order of this list; to pin a paper higher in the Selected view only,
+                     add style="--selected-order: 1" (then 2, 3, ...) to its <li>. -->
+                <input type="radio" name="pub-view" id="pub-view-selected" class="pub-view-input" checked autocomplete="off">
+                <input type="radio" name="pub-view" id="pub-view-all" class="pub-view-input" autocomplete="off">
+                <div class="pub-view-toggle">
+                    <label for="pub-view-selected">Selected papers</label>
+                    <span aria-hidden="true">/</span>
+                    <label for="pub-view-all">All papers</label>
+                </div>
+
                 <ul class="pub-list">
-                    <li>
+                    <li class="pub-selected">
                         <div class="pub-title-row">
                             <strong>Secure Agentic Coding through Counterexample-Grounded Feedback (FALCON)</strong>
                         </div>
@@ -102,7 +117,7 @@
                             [<a href="https://github.com/FSoft-AI4Code/FALCON" target="_blank">GitHub</a>]
                         </div>
                     </li>
-                    <li>
+                    <li class="pub-selected">
                         <div class="pub-title-row">
                             <strong>Can Agentic Code Review Catch Vulnerabilities Before They Are Merged?</strong>
                         </div>
@@ -151,7 +166,7 @@
                             [<a href="https://github.com/FSoft-AI4Code/RustPrint" target="_blank">GitHub</a>]
                         </div>
                     </li>
-                    <li>
+                    <li class="pub-selected" style="--selected-order: 1">
                         <div class="pub-title-row">
                             <strong>CodeWiki: Evaluating AI's Ability to Generate Holistic Documentation for Large-Scale Codebases</strong>
                             <a href="https://github.com/FSoft-AI4Code/CodeWiki" target="_blank"><img src="https://img.shields.io/github/stars/FSoft-AI4Code/CodeWiki?style=social" alt="Stars"></a>
@@ -159,11 +174,11 @@
                         <div class="pub-authors"><strong>Anh Nguyen Hoang</strong>, Minh Le-Anh, Bach Le, Nghi D. Q. Bui.</div>
                         <div class="pub-meta"><span class="pub-venue">Findings of ACL 2026</span></div>
                         <div class="pub-links">
-                            [<a href="https://arxiv.org/abs/2510.24428" target="_blank">arXiv</a>]
+                            [<a href="https://aclanthology.org/2026.findings-acl.288/" target="_blank">ACL Anthology</a>]
                             [<a href="https://github.com/FSoft-AI4Code/CodeWiki" target="_blank">GitHub</a>]
                         </div>
                     </li>
-                    <li>
+                    <li class="pub-selected">
                         <div class="pub-title-row">
                             <strong>Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction</strong>
                             <a href="https://github.com/anhnh2002/mutual-pairing-data-augmentation" target="_blank"><img src="https://img.shields.io/github/stars/anhnh2002/mutual-pairing-data-augmentation?style=social" alt="Stars"></a>
@@ -171,10 +186,11 @@
                         <div class="pub-authors"><strong>Nguyen Hoang Anh*</strong>, Quyen Tran*, Thanh Xuan Nguyen*, Nguyen Thi Ngoc Diep, Linh Ngo Van, Thien Huu Nguyen, Trung Le. (*Equal contribution)</div>
                         <div class="pub-meta"><span class="pub-venue">NAACL 2025</span></div>
                         <div class="pub-links">
+                            [<a href="https://aclanthology.org/2025.naacl-long.205/" target="_blank">ACL Anthology</a>]
                             [<a href="https://github.com/anhnh2002/mutual-pairing-data-augmentation" target="_blank">GitHub</a>]
                         </div>
                     </li>
-                    <li>
+                    <li class="pub-selected">
                         <div class="pub-title-row">
                             <strong>Preserving Generalization of Language Models in Few-shot Continual Relation Extraction</strong>
                             <a href="https://github.com/thanhnx12/CRE-via-MMI" target="_blank"><img src="https://img.shields.io/github/stars/thanhnx12/CRE-via-MMI?style=social" alt="Stars"></a>
@@ -182,6 +198,7 @@
                         <div class="pub-authors">Quyen Tran*, Nguyen Xuan Thanh*, <strong>Nguyen Hoang Anh*</strong>, Nam Le Hai, Trung Le, Linh Van Ngo, Thien Huu Nguyen. (*Equal contribution)</div>
                         <div class="pub-meta"><span class="pub-venue">EMNLP 2024</span></div>
                         <div class="pub-links">
+                            [<a href="https://aclanthology.org/2024.emnlp-main.763/" target="_blank">ACL Anthology</a>]
                             [<a href="https://github.com/thanhnx12/CRE-via-MMI" target="_blank">GitHub</a>]
                         </div>
                     </li>

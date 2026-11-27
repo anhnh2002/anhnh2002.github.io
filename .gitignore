@@ -1,2 +1,5 @@
 /SOP
 /SOP-backup
+.env
+/applications
+/interview

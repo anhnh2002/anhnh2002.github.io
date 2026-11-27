@@ -161,9 +161,13 @@ model; sliding-window streaming cuts time to first audio from about 1 s to 200 m
 First prize among nearly 400 teams in Vietnam's first national AI competition
 
 \begin{itemize}[leftmargin=1.5em,itemsep=0em,topsep=0.1em]
+    % resume_industry_llm_jobs.tex defines \nophdfunding before \input-ing this
+    % file, for job applications where the PhD plan is left out.
+    \ifdefined\nophdfunding\else
     \item Techcombank overseas PhD funding for winning: up to USD 333,000
     (April 2026)
     \href{https://anhnh2002.github.io/Letter_of_Offer_N.H.Anh.pdf}{[Offer Letter]}
+    \fi
     \item Fully fine-tuned Qwen3-8B on 2K web and textbook preference pairs with a
     weighted SFT + DPO loss (my proposal) to learn new knowledge and answer in
     natural, respectful Vietnamese; scored about 12 percentage points above base
